@@ -12,6 +12,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
         }
 
         td, th {
@@ -22,6 +29,20 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightskyblue;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -42,6 +63,7 @@
                     TR,TD,TH
         -->
         <table>
+            <caption>Lista de população</caption>
             <thead>
                 <tr>
                     <th>Estado</th>
