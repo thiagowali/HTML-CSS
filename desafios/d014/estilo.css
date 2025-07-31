@@ -21,7 +21,7 @@ iframe {
     width: 280px;
     position: absolute;
     top: 115px;
-    left: 233px;
+    left: 235px;
     
 }
 
@@ -37,3 +37,9 @@ img{
     border-radius: 50%;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.271);
 }
+
+img:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);
+    border: 1px solid white;
+}
+
