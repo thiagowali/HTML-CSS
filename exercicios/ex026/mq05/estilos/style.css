@@ -28,7 +28,7 @@ span#burger {
     cursor: pointer;
 }
 
-i#burger:hover {
+span#burger:hover {
     background-color: white;
     color: black;
 }
@@ -62,6 +62,10 @@ main {
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
+}
+
+main h2 {
+    text-align: center;
 }
 
 main > article > h2 {
