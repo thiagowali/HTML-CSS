@@ -9,7 +9,7 @@
             background-color: lightsalmon;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap-reverse;
+            flex-wrap: nowrap;
         }
 
         div.items {
@@ -17,19 +17,146 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
+        }
+
+        div.container5 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div.items5 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex: auto;
+        }
+
+        div.container2 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div.items2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.container3 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+
+        div.items3 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.container4 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        div.items4 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.container6 {
+            background-color: lightcoral;
+            height: 100px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        div.items6 {
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
         }
 
     </style>
 </head>
 <body>
+    <p>Exemplo sem flex-wrap (padrão) e com flex:auto (que preenche todo o espaço interno do container) </p>
     <div class="container">
-        <div class="items">Exemplo de bloc: A</div>
-        <div class="items">Exemplo de bloc: B</div>
-        <div class="items">Exemplo de bloc: C</div>
-        <div class="items">Exemplo de bloc: D</div>
-        <div class="items">Exemplo de bloc: E</div>
-        <div class="items">Exemplo de bloc: F</div>
-        <div class="items">Exemplo de bloc: G</div>
-    </div>    
+        <div class="items">Exemplo de bloco: A</div>
+        <div class="items">Exemplo de bloco: B</div>
+        <div class="items">Exemplo de bloco: C</div>
+        <div class="items">Exemplo de bloco: D</div>
+        <div class="items">Exemplo de bloco: E</div>
+        <div class="items">Exemplo de bloco: F</div>
+        <div class="items">Exemplo de bloco: G</div>
+    </div> 
+    
+    <p>Exemplo com flex-wrap em row e flex:auto (quebrando apenas quando o conteudo interno dos filhos está no limite)</p>
+    <div class="container5">
+        <div class="items5">Exemplo de bloco: A</div>
+        <div class="items5">Exemplo de bloco: B</div>
+        <div class="items5">Exemplo de bloco: C</div>
+        <div class="items5">Exemplo de bloco: D</div>
+        <div class="items5">Exemplo de bloco: E</div>
+        <div class="items5">Exemplo de bloco: F</div>
+        <div class="items5">Exemplo de bloco: G</div>
+    </div> 
+
+    <p>Exemplo com flex-wrap: wrap em row</p>
+    <div class="container2">
+        <div class="items2">Exemplo de bloco: A</div>
+        <div class="items2">Exemplo de bloco: B</div>
+        <div class="items2">Exemplo de bloco: C</div>
+        <div class="items2">Exemplo de bloco: D</div>
+        <div class="items2">Exemplo de bloco: E</div>
+        <div class="items2">Exemplo de bloco: F</div>
+        <div class="items2">Exemplo de bloco: G</div>
+    </div>  
+
+    <p>Exemplo com flex-wrap: wrap-reverse em row (o conteudo é invertido baseado na direção do cross-axis, que é definido pelo flex-direction)</p>
+    <div class="container3">
+        <div class="items3">Exemplo de bloco: A</div>
+        <div class="items3">Exemplo de bloco: B</div>
+        <div class="items3">Exemplo de bloco: C</div>
+        <div class="items3">Exemplo de bloco: D</div>
+        <div class="items3">Exemplo de bloco: E</div>
+        <div class="items3">Exemplo de bloco: F</div>
+        <div class="items3">Exemplo de bloco: G</div>
+    </div>  
+
+    <p>Exemplo COM flex-flow: row-reverse wrap-reverse (shorthand de flex-direction e flex-wrap)</p>
+    <div class="container4">
+        <div class="items4">Exemplo de bloco: A</div>
+        <div class="items4">Exemplo de bloco: B</div>
+        <div class="items4">Exemplo de bloco: C</div>
+        <div class="items4">Exemplo de bloco: D</div>
+        <div class="items4">Exemplo de bloco: E</div>
+        <div class="items4">Exemplo de bloco: F</div>
+        <div class="items4">Exemplo de bloco: G</div>
+    </div>  
+
+    <p>Exemplo com flex-wrap: wrap em column (coluna)</p>
+    <div class="container6">
+        <div class="items6">Exemplo de bloco: A</div>
+        <div class="items6">Exemplo de bloco: B</div>
+        <div class="items6">Exemplo de bloco: C</div>
+        <div class="items6">Exemplo de bloco: D</div>
+        <div class="items6">Exemplo de bloco: E</div>
+        <div class="items6">Exemplo de bloco: F</div>
+        <div class="items6">Exemplo de bloco: G</div>
+    </div>  
 </body>
 </html>
