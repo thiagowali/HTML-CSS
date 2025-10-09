@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+        }
+
+        div.items {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div.container2 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+        }
+
+        div.items2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div.container3 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        div.items3 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div.container4 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        div.items4 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div.container5 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+        }
+
+        div.items5 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div.container6 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        div.items6 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div.container7 {
+            background-color: lightsalmon;
+            height: 100px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+        }
+
+        div.items7 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+        
+        div.container8 {
+            background-color: lightsalmon;
+            height: 100px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+        }
+
+        div.items8 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div.container9 {
+            background-color: lightsalmon;
+            height: 100px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-end;
+        }
+
+        div.items9 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div.container10 {
+            background-color: lightsalmon;
+            height: 100px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+
+        div.items10 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>Exemplo de Justify-content: flex-start (padrão)</p>
+    <div class="container">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">G</div>
+    </div>    
+
+    <p>Exemplo de Justify-content: flex-end</p>
+    <div class="container2">
+        <div class="items2">A</div>
+        <div class="items2">B</div>
+        <div class="items2">C</div>
+        <div class="items2">D</div>
+        <div class="items2">E</div>
+        <div class="items2">F</div>
+        <div class="items2">G</div>
+    </div>
+
+    <p>Exemplo de Justify-content:center</p>
+    <div class="container3">
+        <div class="items3">A</div>
+        <div class="items3">B</div>
+        <div class="items3">C</div>
+        <div class="items3">D</div>
+        <div class="items3">E</div>
+        <div class="items3">F</div>
+        <div class="items3">G</div>
+    </div>
+
+    <p>Exemplo de Justify-content:space-between</p>
+    <div class="container4">
+        <div class="items4">A</div>
+        <div class="items4">B</div>
+        <div class="items4">C</div>
+        <div class="items4">D</div>
+        <div class="items4">E</div>
+        <div class="items4">F</div>
+        <div class="items4">G</div>
+    </div>
+
+    <p>Exemplo de Justify-content:space-evenly</p>
+    <div class="container5">
+        <div class="items5">A</div>
+        <div class="items5">B</div>
+        <div class="items5">C</div>
+        <div class="items5">D</div>
+        <div class="items5">E</div>
+        <div class="items5">F</div>
+        <div class="items5">G</div>
+    </div>
+
+    <p>Exemplo de Justify-content: space-around</p>
+    <div class="container6">
+        <div class="items6">A</div>
+        <div class="items6">B</div>
+        <div class="items6">C</div>
+        <div class="items6">D</div>
+        <div class="items6">E</div>
+        <div class="items6">F</div>
+        <div class="items6">G</div>
+    </div>
+
+    <p>Exemplo de align-items: stretch (padrão)</p>
+    <div class="container7">
+        <div class="items7">A</div>
+        <div class="items7">B</div>
+        <div class="items7">C</div>
+        <div class="items7">D</div>
+        <div class="items7">E</div>
+        <div class="items7">F</div>
+        <div class="items7">G</div>
+    </div> 
+
+    <p>Exemplo de align-items: flex-start</p>
+    <div class="container8">
+        <div class="items8">A</div>
+        <div class="items8">B</div>
+        <div class="items8">C</div>
+        <div class="items8">D</div>
+        <div class="items8">E</div>
+        <div class="items8">F</div>
+        <div class="items8">G</div>
+    </div> 
+
+    <p>Exemplo de align-items: flex-end</p>
+    <div class="container9">
+        <div class="items9">A</div>
+        <div class="items9">B</div>
+        <div class="items9">C</div>
+        <div class="items9">D</div>
+        <div class="items9">E</div>
+        <div class="items9">F</div>
+        <div class="items9">G</div>
+    </div> 
+
+    <p>Exemplo de align-items: center</p>
+    <div class="container10">
+        <div class="items10">A</div>
+        <div class="items10">B</div>
+        <div class="items10">C</div>
+        <div class="items10">D</div>
+        <div class="items10">E</div>
+        <div class="items10">F</div>
+        <div class="items10">G</div>
+    </div> 
+
+</body>
+</html>
