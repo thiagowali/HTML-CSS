@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+
+        div.items {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+        div.container2 {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+        }
+
+        div.items2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+        div.container3 {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-end;
+        }
+
+        div.items3 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+        div.container4 {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+        }
+
+        div.items4 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+        div.container5 {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+        }
+
+        div.items5 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+        div.container6 {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+        }
+
+        div.items6 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+        div.container7 {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+        }
+
+        div.items7 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>exemplo de flexbox com align-content: stretch (padrão, funciona muito similar so align-itens stretch, q tbm é o padrão), o conteudo quebrado é esticado no sentido do cross-axis</p>
+    <div class="container">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">G</div>
+        <div class="items">H</div>
+        <div class="items">I</div>
+        <div class="items">J</div>
+        <div class="items">K</div>
+        <div class="items">L</div>
+    </div>    
+
+    <p>exemplo de flexbox com align-content: flex-start, o conteudo quebrado é grudado no cross-start e o espaço vazio fica no cross-end</p>
+    <div class="container2">
+        <div class="items2">A</div>
+        <div class="items2">B</div>
+        <div class="items2">C</div>
+        <div class="items2">D</div>
+        <div class="items2">E</div>
+        <div class="items2">F</div>
+        <div class="items2">G</div>
+        <div class="items2">H</div>
+        <div class="items2">I</div>
+        <div class="items2">J</div>
+        <div class="items2">K</div>
+        <div class="items2">L</div>
+    </div> 
+
+    <p>exemplo de flexbox com align-content: flex-end, o conteudo quebrado é grudado no cross-end e o espaço vazio fica no cross-start</p>
+    <div class="container3">
+        <div class="items3">A</div>
+        <div class="items3">B</div>
+        <div class="items3">C</div>
+        <div class="items3">D</div>
+        <div class="items3">E</div>
+        <div class="items3">F</div>
+        <div class="items3">G</div>
+        <div class="items3">H</div>
+        <div class="items3">I</div>
+        <div class="items3">J</div>
+        <div class="items3">K</div>
+        <div class="items3">L</div>
+    </div> 
+
+    <p>exemplo de flexbox com align-content: center, o conteudo quebrado é colocado no centro e o espaço vazio é dividido igualmente no cross-start e cross-end</p>
+    <div class="container4">
+        <div class="items4">A</div>
+        <div class="items4">B</div>
+        <div class="items4">C</div>
+        <div class="items4">D</div>
+        <div class="items4">E</div>
+        <div class="items4">F</div>
+        <div class="items4">G</div>
+        <div class="items4">H</div>
+        <div class="items4">I</div>
+        <div class="items4">J</div>
+        <div class="items4">K</div>
+        <div class="items4">L</div>
+    </div>
+
+    <p>exemplo de flexbox com align-content: space-between, o conteudo inicial é grudado no cross-start e o conteudo quebrado é grudado no cross-end e o espaço vazio é colocado no meio. Se possuir mais quebras, os outros conteudos são colocados no meio e o espaço dividido entre eles, sem afetar o cross-start e cross-end</p>
+    <div class="container5">
+        <div class="items5">A</div>
+        <div class="items5">B</div>
+        <div class="items5">C</div>
+        <div class="items5">D</div>
+        <div class="items5">E</div>
+        <div class="items5">F</div>
+        <div class="items5">G</div>
+        <div class="items5">H</div>
+        <div class="items5">I</div>
+        <div class="items5">J</div>
+        <div class="items5">K</div>
+        <div class="items5">L</div>
+    </div>
+
+    <p>exemplo de flexbox com align-content: space-evenly, o conteudo quebrado é dividido igualmente com espaços vazios entre eles, tambem afeta o cross-start e cross-end</p>
+    <div class="container6">
+        <div class="items6">A</div>
+        <div class="items6">B</div>
+        <div class="items6">C</div>
+        <div class="items6">D</div>
+        <div class="items6">E</div>
+        <div class="items6">F</div>
+        <div class="items6">G</div>
+        <div class="items6">H</div>
+        <div class="items6">I</div>
+        <div class="items6">J</div>
+        <div class="items6">K</div>
+        <div class="items6">L</div>
+    </div>
+
+    <p>exemplo de flexbox com align-content: space-around, ele separa o espaço do container em partes (baseado no numero de linhas/quebras) e coloca o conteudo centralizado dentro dessas partes, mas sem esticar como o STRETCH</p>
+    <div class="container7">
+        <div class="items7">A</div>
+        <div class="items7">B</div>
+        <div class="items7">C</div>
+        <div class="items7">D</div>
+        <div class="items7">E</div>
+        <div class="items7">F</div>
+        <div class="items7">G</div>
+        <div class="items7">H</div>
+        <div class="items7">I</div>
+        <div class="items7">J</div>
+        <div class="items7">K</div>
+        <div class="items7">L</div>
+    </div>
+</body>
+</html>
