@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.items1 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div.items2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        div.items3 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div.items4 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        div.items5-1 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div.items5-2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+
+        div.items5-3 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        1 - permite que cresça/encolha 
+        <br>
+        0 - não permite que cresça/encolha
+    </p>
+    <p>
+        Exemplo de Flex-basis com: shri1nk 1 e grow 0
+        <br>
+        Shrink 1 permite que ele encolha e grow 0 impede que cresça
+        </p>
+    <div class="container">
+        
+        <div class="items1">A</div>
+        <div class="items1">B</div>
+        <div class="items1">C</div>
+    </div>    
+
+    <p>
+        Exemplo de Flex-basis com: shrink 0 e grow 1
+        <br>
+        Shrink 0 impede que ele encolha e grow 1 permite que cresça
+        </p>
+    <div class="container">
+        
+        <div class="items2">A</div>
+        <div class="items2">B</div>
+        <div class="items2">C</div>
+    </div>  
+
+    <p>
+        Exemplo de Flex-basis com: shrink 1 e grow 1
+        <br>
+        Shrink 1 permite que ele encolha e grow 1 permite que cresça
+        </p>
+    <div class="container">
+        
+        <div class="items3">A</div>
+        <div class="items3">B</div>
+        <div class="items3">C</div>
+    </div>  
+
+    <p>
+        Exemplo de Flex-basis com: shrink 0 e grow 0
+        <br>
+        Shrink 10 impede que ele encolha e grow 0 impede que cresça
+        </p>
+    <div class="container">
+        
+        <div class="items4">A</div>
+        <div class="items4">B</div>
+        <div class="items4">C</div>
+    </div>  
+
+    <p>
+        Exemplo de Flex-basis com:
+        <br>
+        item A: 
+        <br>
+        Flex-basis: 150px
+        <br>
+        flex-grow: 0
+        <br>
+        flex-shrink: 1
+        <br>
+
+        item B: 
+        <br>
+        Flex-basis: 150px
+        <br>
+        flex-grow: 2
+        <br>
+        flex-shrink: 0
+        <br>
+
+        item C: 
+        <br>
+        Flex-basis: 150px
+        <br>
+        flex-grow: 1
+        <br>
+        flex-shrink: 2
+        </p>
+    <div class="container">
+        
+        <div class="items5-1">A</div>
+        <div class="items5-2">B</div>
+        <div class="items5-3">C</div>
+    </div>  
+</body>
+</html>

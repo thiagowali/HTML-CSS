@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.items1 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+            
+        }
+
+        div#Caixa1 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#Caixa2 {
+            flex-shrink: 1;
+            flex-grow: 4;
+        }
+
+        div#Caixa3 {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p>
+        1 - permite que cresça/encolha 
+        <br>
+        0 - não permite que cresça/encolha
+    </p>
+    <p>
+        Exemplo de Flex-basis com: shri1nk 1 e grow 0
+        <br>
+        Shrink 1 permite que ele encolha e grow 0 impede que cresça
+        </p>
+    <div class="container">
+        
+        <div class="items1" id="Caixa1">A</div>
+        <div class="items1" id="Caixa2">B</div>
+        <div class="items1" id="Caixa3">C</div>
+    </div>    
+
+</body>
+</html>
